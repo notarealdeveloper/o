@@ -1,1 +1,86 @@
-a=$(bc <<< '(0 + 1) + 1') && b=$((a+a)) && ab=$((a*b)) && ba=$((b*ab)) && aba=$((a+ba)) && ababa=$((ab+aba)) && o=$((ababa-a)) && ox="print(chr(0x$o))" && at=$(python <<< "$ox") && mkdir $at && cd $at && git init && : > ' ' && git add ' ' && git config --local user.name '.' && git config --local user.email '' && git commit -m "."
+.
+    a=$(bc <<< '(0 + 1) + 1') && b=$((a+a)) && ab=$((a*b)) && ba=$((b*ab)) && aba=$((a+ba)) && ababa=$((ab+aba)) &&
+    o=$((ababa-a)) && ox="print(chr(0x$o))" && at=$(python <<< "$ox") && mkdir $at && cd $at && git init && : > ' '
+    && git add ' ' && git config --local user.name '.' && git config --local user.email '' && git commit -m "."
+
+|
+    git config user.email @ &&
+    --
+    echo $. > ' ' # err
+    echo !! > ' ' # err
+    ^P !!:p > ' ' # err
+    ^P ^P ^P
+    ^C
+    vi ' '
+    p             # err
+    u
+    ^V
+    ...
+    :wq
+    --
+    ^R
+    ema
+    ^M
+    lord Isn't ^M supposed to be enter? Why isn't mine working?
+    > Yes. Ctrl+M sends carriage return (CR, `0x0d`), displayed as `^M`.
+    > Typing `^` and `m` sends two literal characters. Hold Ctrl and press M.
+    > If the actual chord fails, it depends on where you’re pressing it.
+    > If both Enter and Ctrl+M fail in a Unix terminal, check `stty -a` for `-icrnl`.
+    > In normal terminal input mode, `stty icrnl` restores the conversion from carriage ret---
+    stty -a
+    # a
+    # A
+    # 10
+    > In normal terminal input mode, `stty icrnl` restores the conversion from car---
+    # ix
+    # * 8
+    # 7 &
+    > restores the conversion from car---
+    # ^  .......
+    # vi ......
+    # % ..... go |O| wu 101 v
+    # iv
+    > .... car---
+    ~ $
+    > ... ri--
+    ~ #
+    > ...age-
+    ~ @
+    > .return
+    > to    ν!   女!!    @2!
+    new
+    @!
+    sh: @!: command not found
+    # tty f$@k ...
+    --
+    git config user.email @
+    git add .
+    git commit -m '|'
+
+:
+    mv ' ' ':'
+    git add : && git commit -m :
+    :wq
+
+    ---
+    ~ $
+    ~ #
+    ~ @
+    --
+    @ command not found
+    -
+
+-
+    . make @
+      name .
+    | make progress
+      make space
+      make hist ||-
+    - fuck this or一
+      fuck you  二
+      fuck off  -
+      move on   |
+    : make name :
+      love u    曰
+
+
