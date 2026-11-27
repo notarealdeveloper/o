@@ -1,0 +1,1 @@
+a=$(bc <<< '(0 + 1) + 1') && b=$((a+a)) && ab=$((a*b)) && ba=$((b*ab)) && aba=$((a+ba)) && ababa=$((ab+aba)) && o=$((ababa-a)) && ox="print(chr(0x$o))" && at=$(python <<< "$ox") && mkdir $at && cd $at && git init && : > ' ' && git add ' ' && git config --local user.name '.' && git config --local user.email '' && git commit -m "."
